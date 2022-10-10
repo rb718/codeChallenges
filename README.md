@@ -33,3 +33,54 @@ Output: affhkkse
 Final Output: afXhkXseX8lXv9Xc5X
 Browse Resources
 Search for any help or documentation you might need for this problem. For example: array indexing, Ruby hash tables, etc.
+
+
+3. You are shopping on Amazon.com for some bags of rice. Each listing displays the number of grains of rice that the bag contains. You want to buy a perfect set of rice bags from the entire search results list, riceBags. A perfect set of rice bags, perfect, is defined as:
+
+• The set contains at least two bags of rice.
+
+• When the rice bags in the set perfect are sorted in increasing order by grain count, it satisfies the condition perfect[] perfect[i]= perfect[i+1] for all 1 si<n. Here n is the size of the set and perfect[i] is the number of rice grains in bag /
+
+Find the largest possible set perfect and return an integer, the size of that set. If no such set is possible, then return -1. It is guaranteed that all elements in riceBags are distinct.
+
+Example
+
+Let the bags of rice available on Amazon have grain counts [3, 9, 4, 2, 16]. The following are the perfect sets.
+
+• Set perfect = [3, 9]. The size of this set is 2.
+
+• Set perfect=[4,2]. The size of this set is 2. ⚫ Set perfect = [4, 16]. The size of this set is 2.
+
+• Set perfect = [4, 2, 16]. The size of this set is 3.
+
+The size of the largest set is 3. The image below illustrates the correct ordering of the purchased rice bags by grains of rice.
+
+Function Description
+
+Complete the function maxSetSize in the editor below.
+
+maxSetSize has the following parameter: int riceBags[n]: the list of bags of rice by rice grain count
+
+Returns
+
+int: the size of the largest set possible or -1 if
+
+there is none
+
+Constraints
+
+• 1≤n≤2-105
+
+• 2≤ riceBags[i]≤106
+
+
+4. Amzon Fresh is a new grocery store designed from the ground up to offer a seamless grocery shopping experience to consumers. As part of a stock clearance exercise at the store, given many piles of fresh products, follow the rules given below to stack the products in an orderly manner.
+
+• There are a total of n piles of products.
+• The number of products in each pile is represented by the array numProcuts.
+• Select any sbuarray from such that the number of products you pick from ith pile is strictly less than the number of products you pick from the (i+1)th pile for all indices i of the subarray.
+
+Find the maxium number of products that can be picked.
+
+Example
+The numbers of products in each pile are numProducts = [7,4,5,2,6,5].
